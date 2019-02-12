@@ -1,0 +1,37 @@
+
+# We don't want the files that get generated here (perhaps use outfile?)
+app-libs/build
+**/here/build
+*~
+*/.externalToolBuilders/
+*/target/
+*/bin/
+*.log
+.DS_Store
+
+# have to be careful to add files that are new .js files
+**/*.js
+/app-libs/**/*.d.ts
+*.js.map
+
+# non-compiled JavaScript files
+!Gulpfile.js
+!webpack.config.js
+!jest.config.js
+
+WIP.txt
+/shippable/
+
+
+*.ipr
+*.iml
+*.iws
+.idea/
+.springBeans
+node_modules/
+
+# Visual Studio user settings and build output
+*.suo
+*.user
+bin
+obj
