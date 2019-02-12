@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "scripts": {
+    "prepare": "node ./yarn-workspaces-hack",
+    "build-gulp": "cd client-app/src/main/resources/some/path/to/here/typescript/ && ./node_modules/.bin/gulp",
+    "build-tsc": "cd client-app/src/main/resources/some/path/to/here/typescript/ && tsc --build --verbose"
+  },
+  "workspaces": {
+    "packages": [
+      "app-libs/src/*",
+      "app-libs/app-*",
+      "client-app/src/main/resources/some/path/to/here/typescript"
+    ],
+    "nohoist": [
+    ]
+  },
+
+  "devDependencies": {
+    "bluebird": "^3.5.0",
+    "glob": "^7.1.2",
+    "typescript": "=3.0.3",
+    "yarn": "1.10.1"
+  }
+}

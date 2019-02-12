@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "lib": [
+            "es5"
+        ],
+        "composite": true,
+        "declaration": true,
+        "downlevelIteration": true,
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitThis": true,
+        "noFallthroughCasesInSwitch": true,
+
+        "removeComments": true,
+        "sourceMap": true,
+        "stripInternal": true
+    }
+}

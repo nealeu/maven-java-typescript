@@ -1,0 +1,32 @@
+{
+    "private": true,
+    "name": "app-components",
+    "version": "0.0.0",
+    "main": "./app-components.js",
+    "typings": "./index.d.ts",
+    "scripts": {
+        "prepare": "webpack"
+    },
+    "dependencies": {
+        "react": "16.7.0-alpha.0",
+        "react-async": "^3.8.1",
+        "react-dom": "16.7.0-alpha.0"
+    },
+    "devDependencies": {
+        "@types/enzyme": "^3.1.14",
+        "@types/jest": "^23.3.2",
+        "@types/react": "16.7.3",
+        "@types/react-dom": "^16.0.5",
+        "enzyme": "^3.6.0",
+        "enzyme-adapter-react-16": "^1.5.0",
+        "enzyme-to-json": "^3.3.4",
+        "jest": "^23.6.0",
+        "jest-cli": "^23.6.0",
+        "jest-config": "^23.6.0",
+        "jest-environment-jsdom": "^23.4.0",
+        "ts-jest": "23.10.0",
+        "ts-loader": "^3.5.0",
+        "typescript": "3.0.3",
+        "webpack": "^3.12.0"
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "noEmit": true, // this isn't a module itself, so don't emit
+        "strict": true,
+        "composite": true
+    },
+//    "files": [],
+//    "include": [],
+    "references": [
+        // only reference the starting point
+        { "path": "./client-app/src/main/resources/some/path/to/here/typescript" }
+    ]
+}

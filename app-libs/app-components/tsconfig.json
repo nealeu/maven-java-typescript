@@ -1,0 +1,6 @@
+{
+  "extends": "../tsconfig.jsx-module.json",
+  "references": [],
+  "include": ["*.ts", "*.tsx"],
+  "exclude": ["index.ts", "__tests__/**/*"]
+}

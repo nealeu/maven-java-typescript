@@ -1,0 +1,32 @@
+{
+    "extends": "../../../../../../../../../tsconfig-base.json",
+    "compilerOptions": {
+        "declarationDir": "../build",
+        "outDir": "../build",
+        "module": "AMD",  // will need UMD for use with webpack
+        "moduleResolution": "Node",
+        "target": "ES5",
+        "noEmit": false,
+        "baseUrl": "",
+        "rootDir": ".", // Force this so tsc doesn't try to infer and gets it wrong when IDEA has done ../../app-libs/src/etc
+        "paths": {
+            "app-dto/*": ["../../../../../../../../../app-libs/src/app-dto/*"],
+            "*": ["*", "./typings/*"]
+        },
+        "lib": [
+            "es5",
+            "dom",
+            "es2015.symbol",
+            "es2015.promise"
+        ],
+        "importHelpers": true,
+        "alwaysStrict": true,
+        "jsx": "react",
+        "strictPropertyInitialization": false // TODO: can switch to true when start using strictNullChecks
+    },
+    "references": [
+        { "path": "../../../../../../../../../app-libs/src/app-dto" },
+        { "path": "../../../../../../../../../app-libs/app-components" }
+    ],
+    "exclude": ["__tests__"]
+}

@@ -1,0 +1,18 @@
+{
+    "extends": "../../../tsconfig-base.json",
+    "compilerOptions": {
+        "declaration": true,
+        "target": "ES5",
+        "module": "CommonJS",
+        "typeRoots": [], // To prevent it finding node_modules at top level
+        "lib": [
+            "es5"
+        ],
+        "noEmit": false,
+        "outDir": "../../build/app-dto",
+        "strict": true, // enable all strict typechecking options
+        "noImplicitReturns": true
+    },
+    "include": ["./**/*"],
+    "exclude": ["index.ts"]
+}
