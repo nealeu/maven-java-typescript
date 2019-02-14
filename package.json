@@ -7,8 +7,8 @@
   },
   "workspaces": {
     "packages": [
-      "app-libs/src/*",
-      "app-libs/app-*",
+      "app-libs/src/app-dto",
+      "app-libs/app-components",
       "client-app/src/main/resources/some/path/to/here/typescript"
     ],
     "nohoist": [
